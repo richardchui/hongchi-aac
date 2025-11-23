@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecorderViewController">
+            <connections>
+                <outlet property="btnCancel" destination="10" id="15"/>
+                <outlet property="btnDelete" destination="26" id="28"/>
+                <outlet property="btnOK" destination="9" id="14"/>
+                <outlet property="btnPlay" destination="19" id="23"/>
+                <outlet property="btnRec" destination="34" id="35"/>
+                <outlet property="btnStartStop" destination="4" id="13"/>
+                <outlet property="btnStop" destination="32" id="36"/>
+                <outlet property="imgRec" destination="31" id="37"/>
+                <outlet property="lblSecond" destination="43" id="44"/>
+                <outlet property="view" destination="1" id="3"/>
+                <outlet property="viewProgressBar" destination="41" id="42"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="420" height="280"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="img_recording_bg.png" id="30">
+                    <rect key="frame" x="28" y="28" width="364" height="224"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9">
+                    <rect key="frame" x="253" y="184" width="60" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="btn_recorder_save.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" image="btn_recorder_save_disabled.png">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="btn_recorder_save_highlighted.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickOK:" destination="-1" eventType="touchUpInside" id="17"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="10">
+                    <rect key="frame" x="388" y="0.0" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="btn_general_close.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="btn_general_close_highlighted.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickCancel:" destination="-1" eventType="touchUpInside" id="18"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="19">
+                    <rect key="frame" x="186" y="184" width="60" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="btn_recorder_play.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" image="btn_recorder_play_disabled.png">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="btn_recorder_play_highlighted.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickPlay:" destination="-1" eventType="touchUpInside" id="22"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="26">
+                    <rect key="frame" x="319" y="184" width="60" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="btn_recorder_delete.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" image="btn_recorder_delete_disabled.png">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="btn_recorder_delete_highlighted.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickDelete:" destination="-1" eventType="touchUpInside" id="29"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="img_recording_rec_off.png" id="31">
+                    <rect key="frame" x="39" y="148" width="125" height="28"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="32">
+                    <rect key="frame" x="104" y="184" width="60" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="btn_recorder_stop.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" image="btn_recorder_stop_disabled.png">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="btn_recorder_stop_highlighted.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickStop:" destination="-1" eventType="touchUpInside" id="39"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="34">
+                    <rect key="frame" x="37" y="184" width="60" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="btn_recorder_rec.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" image="btn_recorder_rec_disabled.png">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="btn_recorder_rec_highlighted.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickRec:" destination="-1" eventType="touchUpInside" id="38"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" id="40">
+                    <rect key="frame" x="173" y="148" width="206" height="28"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="41">
+                    <rect key="frame" x="177" y="152" width="198" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="43">
+                    <rect key="frame" x="184" y="151" width="188" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+        </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="28"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+            <state key="normal" title="錄音" backgroundImage="btn_type_a.png">
+                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+            </state>
+            <state key="disabled" backgroundImage="btn_type_a_disabled.png">
+                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            </state>
+            <state key="highlighted" backgroundImage="btn_type_a_highlighted.png">
+                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            </state>
+            <connections>
+                <action selector="onClickStartStop:" destination="-1" eventType="touchUpInside" id="16"/>
+            </connections>
+        </button>
+        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="no more than 5 seconds for each recording" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="12">
+            <rect key="frame" x="0.0" y="0.0" width="284" height="21"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+            <nil key="highlightedColor"/>
+        </label>
+    </objects>
+    <resources>
+        <image name="btn_general_close.png" width="41" height="42"/>
+        <image name="btn_general_close_highlighted.png" width="41" height="42"/>
+        <image name="btn_recorder_delete.png" width="60" height="61"/>
+        <image name="btn_recorder_delete_disabled.png" width="60" height="61"/>
+        <image name="btn_recorder_delete_highlighted.png" width="60" height="61"/>
+        <image name="btn_recorder_play.png" width="60" height="61"/>
+        <image name="btn_recorder_play_disabled.png" width="60" height="61"/>
+        <image name="btn_recorder_play_highlighted.png" width="60" height="61"/>
+        <image name="btn_recorder_rec.png" width="60" height="61"/>
+        <image name="btn_recorder_rec_disabled.png" width="60" height="61"/>
+        <image name="btn_recorder_rec_highlighted.png" width="60" height="61"/>
+        <image name="btn_recorder_save.png" width="60" height="61"/>
+        <image name="btn_recorder_save_disabled.png" width="60" height="61"/>
+        <image name="btn_recorder_save_highlighted.png" width="60" height="61"/>
+        <image name="btn_recorder_stop.png" width="60" height="61"/>
+        <image name="btn_recorder_stop_disabled.png" width="60" height="61"/>
+        <image name="btn_recorder_stop_highlighted.png" width="60" height="61"/>
+        <image name="btn_type_a.png" width="139" height="40"/>
+        <image name="btn_type_a_disabled.png" width="139" height="40"/>
+        <image name="btn_type_a_highlighted.png" width="139" height="40"/>
+        <image name="img_recording_bg.png" width="364" height="224"/>
+        <image name="img_recording_rec_off.png" width="130" height="28"/>
+    </resources>
+</document>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingViewController_iPad">
+            <connections>
+                <outlet property="btnClose" destination="7" id="8"/>
+                <outlet property="ivIcon1" destination="35" id="36"/>
+                <outlet property="ivIcon2" destination="34" id="37"/>
+                <outlet property="lblLangTitle" destination="16" id="17"/>
+                <outlet property="lblSetting" destination="19" id="31"/>
+                <outlet property="lblSettingLockReminder" destination="14" id="15"/>
+                <outlet property="lblSettingLockTitle" destination="11" id="18"/>
+                <outlet property="scLang" destination="4" id="5"/>
+                <outlet property="switchSettingLock" destination="10" id="12"/>
+                <outlet property="tvDisclaimer" destination="32" id="33"/>
+                <outlet property="view" destination="2" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="4">
+                    <rect key="frame" x="172" y="163" width="207" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <segments>
+                        <segment title="繁"/>
+                        <segment title="简"/>
+                    </segments>
+                    <connections>
+                        <action selector="onChangeLang:" destination="-1" eventType="valueChanged" id="6"/>
+                    </connections>
+                </segmentedControl>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7">
+                    <rect key="frame" x="977" y="8" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="btn_general_close.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="btn_general_close_highlighted.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickClose:" destination="-1" eventType="touchUpInside" id="9"/>
+                    </connections>
+                </button>
+                <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="10">
+                    <rect key="frame" x="172" y="105" width="51" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <action selector="onSwitchSettingLock:" destination="-1" eventType="valueChanged" id="13"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Setting Lock" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="11">
+                    <rect key="frame" x="58" y="108" width="96" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="「設定」鍵           及「檔案頁」鍵           已加保護，如要啟動，需按鍵3秒。" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="14">
+                    <rect key="frame" x="58" y="137" width="857" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Setting Lock" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="16">
+                    <rect key="frame" x="58" y="174" width="96" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="19">
+                    <rect key="frame" x="58" y="20" width="302" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" id="30">
+                    <rect key="frame" x="43" y="349" width="924" height="379"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="32">
+                            <rect key="frame" x="0.0" y="0.0" width="924" height="379"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <string key="text">版權聲明
+此應用程式的所有內容,包括但不限於文字、圖像、影音、軟件及程式等之版權, 均為匡智會所有。 任何人士不得未經本會的書面同意, 以任何方式抄襲、更改、複印、出版、上載、傳送及發放此應用程式內的資訊及材料。
+
+Copyright statement
+The copyright of all contents in this application, including but not limited to texts, graphics, drawings, audio recordings and the scripts and software, belongs to Hong Chi Association.
+You must not create derivative works, modify, copy, reproduce, alter, or publicly display any content from this application without prior written permission of Hong Chi Association.
+
+
+免責聲明：
+任何非由本會輸入到應用程式內的文字、圖像、照片或聲音檔案, 用戶需全權負責相關的版權。
+
+Disclaimer Statement:
+The user is solely responsible for any matter concerning the copyright of texts, graphics, drawings, photos, audio recordings, that are not inputs provided by Hong Chi Association, in the Application.
+</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="btn_summery.png" id="34">
+                    <rect key="frame" x="320" y="138" width="40" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="btn_aac_setting_highlighted.png" id="35">
+                    <rect key="frame" x="149" y="141" width="40" height="15"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.92549026010000002" green="0.82745105029999999" blue="0.64705884459999996" alpha="1" colorSpace="deviceRGB"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_aac_setting_highlighted.png" width="82" height="32"/>
+        <image name="btn_general_close.png" width="41" height="42"/>
+        <image name="btn_general_close_highlighted.png" width="41" height="42"/>
+        <image name="btn_summery.png" width="80" height="39"/>
+    </resources>
+</document>

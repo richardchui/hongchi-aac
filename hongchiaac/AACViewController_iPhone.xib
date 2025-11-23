@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AACViewController_iPhone">
+            <connections>
+                <outlet property="btnBack" destination="8" id="9"/>
+                <outlet property="btnBackToSummary" destination="51" id="57"/>
+                <outlet property="btnCloseMenu" destination="28" id="30"/>
+                <outlet property="btnDiscard" destination="13" id="15"/>
+                <outlet property="btnDiscardAll" destination="53" id="54"/>
+                <outlet property="btnMenuProfile" destination="25" id="43"/>
+                <outlet property="btnMenuSetting" destination="26" id="62"/>
+                <outlet property="btnMenuWeb" destination="27" id="63"/>
+                <outlet property="btnMiniGame" destination="45" id="47"/>
+                <outlet property="btnPageBack" destination="34" id="37"/>
+                <outlet property="btnPageHome" destination="35" id="38"/>
+                <outlet property="btnPageNext" destination="36" id="39"/>
+                <outlet property="btnPlay" destination="14" id="16"/>
+                <outlet property="lblProfileName" destination="58" id="59"/>
+                <outlet property="pageControl" destination="7" id="11"/>
+                <outlet property="scrollView" destination="6" id="10"/>
+                <outlet property="selectedCardContainer" destination="19" id="20"/>
+                <outlet property="view" destination="1" id="3"/>
+                <outlet property="viewMenu" destination="22" id="32"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="aac_bg_iphone.png" id="4">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" id="6">
+                    <rect key="frame" x="0.0" y="97" width="480" height="194"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </scrollView>
+                <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="7">
+                    <rect key="frame" x="146" y="292" width="219" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </pageControl>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8">
+                    <rect key="frame" x="3" y="64" width="50" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                    <state key="normal" image="btn_aac_back.png">
+                        <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="btn_aac_back_highlighted.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickBack:" destination="-1" eventType="touchUpInside" id="12"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="13">
+                    <rect key="frame" x="390" y="13" width="36" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="btn_aac_discard.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="btn_aac_discard_highlighted.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickDiscard:" destination="-1" eventType="touchUpInside" id="17"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="14">
+                    <rect key="frame" x="349" y="13" width="36" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="btn_aac_speak_card.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="btn_aac_speak_card_highlighted.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickPlay:" destination="-1" eventType="touchUpInside" id="18"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" id="19">
+                    <rect key="frame" x="3" y="5" width="338" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="21">
+                    <rect key="frame" x="420" y="300" width="60" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="btn_aac_setting.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="btn_aac_setting_highlighted.png"/>
+                    <state key="highlighted" image="btn_aac_setting_highlighted.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onMousePressMenu:" destination="-1" eventType="touchDown" id="49"/>
+                        <action selector="onMouseReleaseMenu:" destination="-1" eventType="touchUpInside" id="48"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="34">
+                    <rect key="frame" x="315" y="64" width="50" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="btn_aac_page_back.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="btn_aac_page_back_highlighted.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onclickPageBack:" destination="-1" eventType="touchUpInside" id="40"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="35">
+                    <rect key="frame" x="370" y="64" width="50" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="btn_aac_page_home.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="btn_aac_page_home_highlighted.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onclickPageHome:" destination="-1" eventType="touchUpInside" id="41"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="36">
+                    <rect key="frame" x="424" y="64" width="50" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="btn_aac_page_next.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="btn_aac_page_next_highlighted.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onclickPageNext:" destination="-1" eventType="touchUpInside" id="42"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="53">
+                    <rect key="frame" x="431" y="13" width="36" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="btn_aac_discard_all.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="btn_aac_discard_all_highlighted.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickDiscardAll:" destination="-1" eventType="touchUpInside" id="55"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="51">
+                    <rect key="frame" x="5" y="64" width="50" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="btn_summery.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" image="btn_summery_disabled.png"/>
+                    <state key="highlighted" image="btn_summery_highlighted.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onMousePressSummery:" destination="-1" eventType="touchDown" id="61"/>
+                        <action selector="onMouseReleaseSummery:" destination="-1" eventType="touchUpInside" id="60"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="58">
+                    <rect key="frame" x="169" y="67" width="142" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+        </view>
+        <view contentMode="scaleToFill" id="22">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="23">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="aac_setting_menu_bg.png" id="24">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="25">
+                            <rect key="frame" x="111" y="119" width="125" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                            <state key="normal" title="檔案" backgroundImage="btn_type_a.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="disabled" backgroundImage="btn_type_a_disabled.png"/>
+                            <state key="highlighted" backgroundImage="btn_type_a_highlighted.png">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickMenuProfile:" destination="-1" eventType="touchUpInside" id="44"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="26">
+                            <rect key="frame" x="111" y="178" width="125" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                            <state key="normal" title="系統設置" backgroundImage="btn_type_a.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="disabled" backgroundImage="btn_type_a_disabled.png"/>
+                            <state key="highlighted" backgroundImage="btn_type_a_highlighted.png">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickSetting:" destination="-1" eventType="touchUpInside" id="50"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="27">
+                            <rect key="frame" x="253" y="119" width="125" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                            <state key="normal" title="網頁" backgroundImage="btn_type_a.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="btn_type_a_disabled.png"/>
+                            <state key="highlighted" backgroundImage="btn_type_a_highlighted.png">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickWebSite:" destination="-1" eventType="touchUpInside" id="64"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="28">
+                            <rect key="frame" x="411" y="59" width="26" height="26"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                            <state key="normal" backgroundImage="btn_general_close.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="btn_general_close_highlighted.png">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickCloseMenu:" destination="-1" eventType="touchUpInside" id="31"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+        </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="45">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="20"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+            <state key="normal" title="遊戲" backgroundImage="btn_aac_setting_menu.png">
+                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+            </state>
+            <state key="highlighted" backgroundImage="btn_aac_setting_menu_highlighted.png">
+                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            </state>
+            <connections>
+                <action selector="onClickMiniGame:" destination="-1" eventType="touchUpInside" id="46"/>
+            </connections>
+        </button>
+    </objects>
+    <resources>
+        <image name="aac_bg_iphone.png" width="960" height="640"/>
+        <image name="aac_setting_menu_bg.png" width="960" height="640"/>
+        <image name="btn_aac_back.png" width="88" height="52"/>
+        <image name="btn_aac_back_highlighted.png" width="88" height="52"/>
+        <image name="btn_aac_discard.png" width="60" height="61"/>
+        <image name="btn_aac_discard_all.png" width="60" height="61"/>
+        <image name="btn_aac_discard_all_highlighted.png" width="60" height="61"/>
+        <image name="btn_aac_discard_highlighted.png" width="60" height="61"/>
+        <image name="btn_aac_page_back.png" width="109" height="40"/>
+        <image name="btn_aac_page_back_highlighted.png" width="109" height="40"/>
+        <image name="btn_aac_page_home.png" width="109" height="40"/>
+        <image name="btn_aac_page_home_highlighted.png" width="109" height="40"/>
+        <image name="btn_aac_page_next.png" width="109" height="40"/>
+        <image name="btn_aac_page_next_highlighted.png" width="109" height="40"/>
+        <image name="btn_aac_setting.png" width="82" height="32"/>
+        <image name="btn_aac_setting_highlighted.png" width="82" height="32"/>
+        <image name="btn_aac_setting_menu.png" width="660" height="140"/>
+        <image name="btn_aac_setting_menu_highlighted.png" width="660" height="140"/>
+        <image name="btn_aac_speak_card.png" width="60" height="61"/>
+        <image name="btn_aac_speak_card_highlighted.png" width="60" height="61"/>
+        <image name="btn_general_close.png" width="41" height="42"/>
+        <image name="btn_general_close_highlighted.png" width="41" height="42"/>
+        <image name="btn_summery.png" width="80" height="39"/>
+        <image name="btn_summery_disabled.png" width="80" height="39"/>
+        <image name="btn_summery_highlighted.png" width="80" height="39"/>
+        <image name="btn_type_a.png" width="139" height="40"/>
+        <image name="btn_type_a_disabled.png" width="139" height="40"/>
+        <image name="btn_type_a_highlighted.png" width="139" height="40"/>
+    </resources>
+</document>

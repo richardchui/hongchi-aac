@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController_iPhone">
+            <connections>
+                <outlet property="btnAddNewProfile" destination="14" id="28"/>
+                <outlet property="btnBack" destination="27" id="29"/>
+                <outlet property="btnCancelNewProfile" destination="106" id="113"/>
+                <outlet property="btnChangeProfileList" destination="82" id="84"/>
+                <outlet property="btnChangeProfilePic" destination="89" id="92"/>
+                <outlet property="btnChangeRemark" destination="44" id="47"/>
+                <outlet property="btnChangeSelectedProfileName" destination="35" id="38"/>
+                <outlet property="btnClose" destination="13" id="15"/>
+                <outlet property="btnConfirmNewProfile" destination="107" id="112"/>
+                <outlet property="btnDeleteProfile" destination="74" id="76"/>
+                <outlet property="btnDeleteProfilePic" destination="88" id="93"/>
+                <outlet property="btnOpenEditAAC" destination="73" id="77"/>
+                <outlet property="btnShareProfile" destination="75" id="124"/>
+                <outlet property="imgViewProfilePic" destination="90" id="91"/>
+                <outlet property="lblCaption" destination="67" id="69"/>
+                <outlet property="lblLayout" destination="127" id="128"/>
+                <outlet property="lblLockSwiping" destination="53" id="56"/>
+                <outlet property="lblName" destination="33" id="36"/>
+                <outlet property="lblNewProfileCopyTitle" destination="104" id="134"/>
+                <outlet property="lblNewProfileName" destination="103" id="133"/>
+                <outlet property="lblProfilePic" destination="130" id="131"/>
+                <outlet property="lblRemark" destination="42" id="45"/>
+                <outlet property="lblShowSelectFrame" destination="137" id="138"/>
+                <outlet property="lblSingleCardMode" destination="49" id="55"/>
+                <outlet property="lblSound" destination="72" id="129"/>
+                <outlet property="lblTappingSpeak" destination="50" id="57"/>
+                <outlet property="pickerView" destination="102" id="111"/>
+                <outlet property="scLayout" destination="22" id="26"/>
+                <outlet property="scSingleCardMode" destination="121" id="122"/>
+                <outlet property="scVoice" destination="71" id="125"/>
+                <outlet property="scrollViewProfileDetail" destination="65" id="66"/>
+                <outlet property="switchCaptionOnOff" destination="68" id="70"/>
+                <outlet property="switchLockSwiping" destination="54" id="59"/>
+                <outlet property="switchShowSelectFrame" destination="135" id="139"/>
+                <outlet property="switchSingleCardMode" destination="51" id="58"/>
+                <outlet property="switchTappingSpeak" destination="52" id="60"/>
+                <outlet property="tableViewProfiles" destination="4" id="8"/>
+                <outlet property="tvRemark" destination="43" id="46"/>
+                <outlet property="txtProfileName" destination="105" id="110"/>
+                <outlet property="txtSelectedProfileName" destination="34" id="109"/>
+                <outlet property="view" destination="1" id="3"/>
+                <outlet property="viewAddProfile" destination="99" id="108"/>
+                <outlet property="viewContainer" destination="19" id="24"/>
+                <outlet property="viewProfileDetail" destination="20" id="25"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="19">
+                    <rect key="frame" x="0.0" y="38" width="480" height="282"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" delaysContentTouches="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="4">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="282"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="9"/>
+                                <outlet property="delegate" destination="-1" id="10"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="profile_head_bg_iphone.png" id="7">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <view contentMode="scaleToFill" id="97">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="74">
+                            <rect key="frame" x="44" y="5" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <state key="normal" image="btn_general_delete.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="btn_general_delete_highlight.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickDeleteProfile:" destination="-1" eventType="touchUpInside" id="79"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="82">
+                            <rect key="frame" x="82" y="5" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="btn_general_reorder_list.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="btn_general_reorder_list_highlighted.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickEditProfileList:" destination="-1" eventType="touchUpInside" id="83"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.16862745100000001" green="0.63921568630000003" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="13">
+                    <rect key="frame" x="369" y="5" width="105" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="開啟溝通簿" backgroundImage="btn_type_a.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" backgroundImage="btn_type_a_disabled.png"/>
+                    <state key="highlighted" backgroundImage="btn_type_a_highlighted.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickClose:" destination="-1" eventType="touchUpInside" id="17"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="14">
+                    <rect key="frame" x="5" y="5" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="btn_general_add.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="btn_general_add_highlighted.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickAddNewProfile:" destination="-1" eventType="touchUpInside" id="116"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="27">
+                    <rect key="frame" x="1" y="5" width="60" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="btn_aac_back.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickBack:" destination="-1" eventType="touchUpInside" id="30"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+        </view>
+        <view contentMode="scaleToFill" id="20">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="670"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="22">
+                    <rect key="frame" x="132" y="268" width="337" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <segments>
+                        <segment title="1x1"/>
+                        <segment title="1x2"/>
+                        <segment title="1x3"/>
+                        <segment title="2x4"/>
+                        <segment title="2x6"/>
+                        <segment title="3x6*"/>
+                    </segments>
+                    <connections>
+                        <action selector="onLayoutChanged" destination="-1" eventType="valueChanged" id="31"/>
+                    </connections>
+                </segmentedControl>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="名稱" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="33">
+                    <rect key="frame" x="19" y="16" width="49" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="23453" borderStyle="line" minimumFontSize="18" id="34">
+                    <rect key="frame" x="134" y="11" width="170" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="35">
+                    <rect key="frame" x="311" y="13" width="55" height="28"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <state key="normal" title="更改" backgroundImage="btn_type_a.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" backgroundImage="btn_type_a_disabled.png"/>
+                    <state key="highlighted" backgroundImage="btn_type_a_highlighted.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickChangeSelectedProfileName:" destination="-1" eventType="touchUpInside" id="126"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="備註" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="42">
+                    <rect key="frame" x="20" y="510" width="53" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="43">
+                    <rect key="frame" x="134" y="515" width="273" height="89"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="44">
+                    <rect key="frame" x="415" y="575" width="55" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <state key="normal" title="更改" backgroundImage="btn_type_a.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" backgroundImage="btn_type_a_disabled.png"/>
+                    <state key="highlighted" backgroundImage="btn_type_a_highlighted.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickChangeRemark:" destination="-1" eventType="touchUpInside" id="48"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="單卡模式" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="49">
+                    <rect key="frame" x="16" y="149" width="96" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="按卡發音" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="50">
+                    <rect key="frame" x="20" y="52" width="96" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="52">
+                    <rect key="frame" x="134" y="52" width="51" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <action selector="onSwitchTappingSpeak:" destination="-1" eventType="valueChanged" id="62"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="鎖定滑動翻頁" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="53">
+                    <rect key="frame" x="266" y="52" width="144" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="54">
+                    <rect key="frame" x="379" y="54" width="51" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <action selector="onSwitchLockSwiping:" destination="-1" eventType="valueChanged" id="63"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="標題" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="67">
+                    <rect key="frame" x="19" y="102" width="53" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="68">
+                    <rect key="frame" x="134" y="104" width="51" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <action selector="onSwitchCaptionOnOff:" destination="-1" eventType="valueChanged" id="85"/>
+                    </connections>
+                </switch>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="71">
+                    <rect key="frame" x="133" y="208" width="336" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <segments>
+                        <segment title="女"/>
+                        <segment title="男"/>
+                    </segments>
+                    <connections>
+                        <action selector="onVoiceChanged:" destination="-1" eventType="valueChanged" id="86"/>
+                    </connections>
+                </segmentedControl>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="聲音" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="72">
+                    <rect key="frame" x="20" y="219" width="53" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="73">
+                    <rect key="frame" x="370" y="619" width="100" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <state key="normal" title="編輯圖卡" backgroundImage="btn_type_a.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" backgroundImage="btn_type_a_disabled.png"/>
+                    <state key="highlighted" backgroundImage="btn_type_a_highlighted.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickOpenEditAAC:" destination="-1" eventType="touchUpInside" id="80"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="75">
+                    <rect key="frame" x="20" y="619" width="100" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <state key="normal" title="SHARE" backgroundImage="btn_type_a.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" backgroundImage="btn_type_a_disabled.png"/>
+                    <state key="highlighted" backgroundImage="btn_type_a_highlighted.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickShareProfile:" destination="-1" eventType="touchUpInside" id="96"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" id="87">
+                    <rect key="frame" x="134" y="347" width="273" height="160"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="default_profile_picture.jpg" id="90">
+                            <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="89">
+                            <rect key="frame" x="180" y="11" width="77" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="change" backgroundImage="btn_type_a.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="disabled" backgroundImage="btn_type_a_disabled.png"/>
+                            <state key="highlighted" backgroundImage="btn_type_a_highlighted.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickChangeProfilePic:" destination="-1" eventType="touchUpInside" id="94"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="88">
+                            <rect key="frame" x="180" y="103" width="77" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="delete" backgroundImage="btn_type_a.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="disabled" backgroundImage="btn_type_a_disabled.png"/>
+                            <state key="highlighted" backgroundImage="btn_type_a_highlighted.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickDeleteProfilePic:" destination="-1" eventType="touchUpInside" id="95"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="121">
+                    <rect key="frame" x="132" y="149" width="141" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <segments>
+                        <segment title="單卡"/>
+                        <segment title="多卡"/>
+                    </segments>
+                    <connections>
+                        <action selector="onSingleCardChanged:" destination="-1" eventType="valueChanged" id="123"/>
+                    </connections>
+                </segmentedControl>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="排列" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="127">
+                    <rect key="frame" x="20" y="279" width="69" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="檔案相片" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="130">
+                    <rect key="frame" x="20" y="353" width="73" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="135">
+                    <rect key="frame" x="379" y="106" width="51" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <action selector="onSwitchShowSelectFrame:" destination="-1" eventType="valueChanged" id="140"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="顯示選擇框" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="137">
+                    <rect key="frame" x="266" y="104" width="91" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.3048528069" green="0.64040656730000001" blue="0.67234205160000005" alpha="1" colorSpace="calibratedRGB"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+        </view>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="65">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="282"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+        </scrollView>
+        <view contentMode="scaleToFill" id="99">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view alpha="0.69999998807907104" contentMode="scaleToFill" id="101">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="100">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="名稱" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="103">
+                            <rect key="frame" x="12" y="-6" width="73" height="51"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <pickerView contentMode="scaleToFill" id="102">
+                            <rect key="frame" x="0.0" y="62" width="480" height="216"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="117"/>
+                                <outlet property="delegate" destination="-1" id="118"/>
+                            </connections>
+                        </pickerView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="從另一個複製檔案" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="104">
+                            <rect key="frame" x="14" y="23" width="295" height="51"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="name" minimumFontSize="20" id="105">
+                            <rect key="frame" x="75" y="4" width="223" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="107">
+                            <rect key="frame" x="116" y="281" width="100" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="OK" backgroundImage="btn_type_a.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="disabled" backgroundImage="btn_type_a_disabled.png"/>
+                            <state key="highlighted" backgroundImage="btn_type_a_highlighted.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickConfirmNewProfile:" destination="-1" eventType="touchUpInside" id="114"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="106">
+                            <rect key="frame" x="266" y="281" width="100" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="Cancel" backgroundImage="btn_type_a.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="disabled" backgroundImage="btn_type_a_disabled.png"/>
+                            <state key="highlighted" backgroundImage="btn_type_a_highlighted.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickCancelNewProfile:" destination="-1" eventType="touchUpInside" id="115"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.3048528069" green="0.64040656730000001" blue="0.67234205160000005" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+        </view>
+        <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="51">
+            <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <connections>
+                <action selector="onSwitchSingleCardMode:" destination="-1" eventType="valueChanged" id="61"/>
+            </connections>
+        </switch>
+        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Layout 3x6 will be shown as 2x6 in iPhone/iPod" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="32">
+            <rect key="frame" x="0.0" y="0.0" width="308" height="21"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+            <nil key="highlightedColor"/>
+        </label>
+    </objects>
+    <resources>
+        <image name="btn_aac_back.png" width="88" height="52"/>
+        <image name="btn_general_add.png" width="41" height="42"/>
+        <image name="btn_general_add_highlighted.png" width="41" height="42"/>
+        <image name="btn_general_delete.png" width="41" height="42"/>
+        <image name="btn_general_delete_highlight.png" width="41" height="42"/>
+        <image name="btn_general_reorder_list.png" width="41" height="42"/>
+        <image name="btn_general_reorder_list_highlighted.png" width="41" height="42"/>
+        <image name="btn_type_a.png" width="139" height="40"/>
+        <image name="btn_type_a_disabled.png" width="139" height="40"/>
+        <image name="btn_type_a_highlighted.png" width="139" height="40"/>
+        <image name="default_profile_picture.jpg" width="500" height="500"/>
+        <image name="profile_head_bg_iphone.png" width="960" height="90"/>
+    </resources>
+</document>
