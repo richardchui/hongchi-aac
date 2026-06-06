@@ -27,7 +27,10 @@
     return self;
 }
 -(id)initWithCard:(Card *)content;{
-    _content = content;
+    self = [super initWithNibName:@"LibCard" bundle:nil];
+    if (self) {
+        _content = content;
+    }
     return self;
 }
 - (void)viewDidLoad

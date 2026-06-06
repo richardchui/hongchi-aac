@@ -85,6 +85,12 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>本應用程式需要存取相片，以使用自訂卡片圖片。</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>本應用程式需要將自訂卡片圖片儲存到相片庫。</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>本應用程式需要使用麥克風以錄製自訂語音。</string>
 	<key>UTExportedTypeDeclarations</key>
 	<array>
 		<dict>
