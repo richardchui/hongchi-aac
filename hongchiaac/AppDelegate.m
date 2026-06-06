@@ -20,7 +20,7 @@
 - (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
 {
     
-    return UIInterfaceOrientationMaskAll;
+    return UIInterfaceOrientationMaskLandscape;
     
     
 }
@@ -41,7 +41,7 @@
     
     
     [self.window makeKeyAndVisible];
-    
+
     // Read the default card plist once in AppDelegate
     self.defaultCardsPlist = [Utils getContentFromPlist:@"default_cards.plist"];
 

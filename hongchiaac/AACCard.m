@@ -35,7 +35,7 @@
 }
 
 -(id)initWithUserCard:(UserCard *)userCard cardIndex:(int)cardIndex profileID:(NSString *)profileID{
-  self = [super init];
+  self = [super initWithNibName:@"AACCard" bundle:nil];
   if (self) {
   }
   
@@ -48,7 +48,7 @@
   return self;
 }
 -(id)initWithUserCard:(UserCard *)userCard cardIndex:(int)cardIndex profileID:(NSString *)profileID withPlist:(NSDictionary *)plist{
-  self = [super init];
+  self = [super initWithNibName:@"AACCard" bundle:nil];
   if (self) {
   }
   

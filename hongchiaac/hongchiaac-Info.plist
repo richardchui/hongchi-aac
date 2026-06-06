@@ -71,6 +71,8 @@
 	<true/>
 	<key>UIStatusBarHidden~ipad</key>
 	<true/>
+	<key>UIRequiresFullScreen</key>
+	<true/>
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleBlackOpaque</string>
 	<key>UISupportedInterfaceOrientations</key>
@@ -85,6 +87,8 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSCameraUsageDescription</key>
+	<string>本應用程式需要使用相機以拍攝自訂卡片圖片。</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>本應用程式需要存取相片，以使用自訂卡片圖片。</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
